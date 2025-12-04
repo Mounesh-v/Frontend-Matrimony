@@ -38,7 +38,7 @@ export default function AdminLogin() {
     setLoading(true);
 
     try {
-      const res = await axios.post(`${API}/api/otp/send-otp`, {
+      const res = await axios.post(`${API}/api/otp/admin-send-otp`, {
         email: form.email,
         password: form.password,
       });
