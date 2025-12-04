@@ -68,7 +68,7 @@ Message: ${formData.message || ""}`;
 
             {/* About */}
             <div>
-              <h3 className="text-4xl font-bold" style={{ color: "#C2185B" }}>
+              <h3 className="text-3xl font-bold" style={{ color: "#C2185B" }}>
                 Thirukalyanamalai
               </h3>
               <p className="text-sm mt-2 leading-relaxed">
