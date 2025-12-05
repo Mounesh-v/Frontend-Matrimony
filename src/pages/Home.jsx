@@ -320,15 +320,15 @@ export default function Home() {
             return (
               <div
                 key={i}
-                className="rounded-xl shadow-lg overflow-hidden bg-white hover:scale-105 transition-all duration-300"
+                className="w-[80%] h-[360px] md:w-[90%] md:h-[300px] mx-auto rounded-xl shadow-lg overflow-hidden bg-white hover:scale-105 transition-all duration-300"
               >
                 <img
                   src={img}
                   alt={titles[i]}
-                  className="h-28 xs:h-32 sm:h-36 md:h-40 lg:h-44 w-full object-cover"
+                  className="h-62 xs:h-32  sm:h-36 md:h-40 lg:h-44 w-full object-cover"
                 />
 
-                <div className="p-3 xs:p-4 sm:p-6">
+                <div className="mt-[6%] md:mt-0 p-3 xs:p-4 sm:p-6">
                   <h3 className="text-base xs:text-lg sm:text-xl font-bold text-pink-700">
                     {titles[i]}
                   </h3>
@@ -338,7 +338,7 @@ export default function Home() {
                     className="mt-2 xs:mt-3 sm:mt-4 w-full text-white py-2 xs:py-2.5 sm:py-3 
                          rounded-lg font-semibold bg-pink-700 hover:bg-pink-800 transition"
                   >
-                    Register Now
+                    Register Free
                   </button>
                 </div>
               </div>
@@ -371,12 +371,12 @@ export default function Home() {
           return (
             <div
               key={i}
-              className="rounded-xl shadow-lg overflow-hidden bg-white hover:scale-105 transition-all duration-300"
+              className=" w-[80%] h-[360px] md:w-[90%] md:h-[300px] mx-auto rounded-xl shadow-lg overflow-hidden bg-white hover:scale-105 transition-all duration-300"
             >
               <img
                 src={img}
                 alt={titles[i]}
-                className="h-24 xs:h-28 sm:h-32 md:h-36 lg:h-40 w-full object-cover"
+                className="h-24  h-[290px] md:w-[90%] xs:h-28 sm:h-32 md:h-36 lg:h-40 w-full object-cover"
               />
               <div className="p-3 xs:p-4 sm:p-6">
                 <h3 className="text-base xs:text-lg sm:text-xl font-bold mb-1 xs:mb-2 text-pink-700">
@@ -397,13 +397,13 @@ export default function Home() {
           Wedding Moments Gallery
         </h2>
 
-        <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 gap-2 xs:gap-3 sm:gap-4 mt-4 xs:mt-6">
+        <div className="grid grid-cols-2 md:w-[90%] md:h-[400px] xs:grid-cols-2 sm:grid-cols-3 gap-3 xs:gap-3 sm:gap-4 mt-4 xs:mt-6">
           {[g1, g2, g3, g4, g5, g6].map((img, i) => (
             <img
               key={i}
               src={img}
               alt={`Gallery ${i + 1}`}
-              className="rounded-lg shadow-md w-full h-20 xs:h-24 sm:h-28 md:h-36 lg:h-40 object-cover 
+              className="  rounded-lg shadow-md w-full h-50 xs:h-24 sm:h-28 md:h-36 lg:h-40 object-cover 
                    hover:scale-105 transition-transform duration-300"
             />
           ))}
