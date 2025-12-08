@@ -138,7 +138,8 @@ export default function AdminLogin() {
                 onChange={(e) => setForm({ ...form, password: e.target.value })}
                 placeholder="Password"
                 className="w-full p-3 rounded border pr-10"
-                style={{ borderColor: "#D81B60" }}/>
+                style={{ borderColor: "#D81B60" }}
+              />
 
               <span
                 className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer text-xl"

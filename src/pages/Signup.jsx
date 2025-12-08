@@ -47,6 +47,7 @@ const Signup = () => {
       setTimer(120); // restart 2-minute timer
       setCanResend(false); // disable resend
     } catch (error) {
+      console.log(error);
       setMsgColor("#D32F2F");
       setMessage(error.response?.data?.message || "Failed to send OTP");
     }
