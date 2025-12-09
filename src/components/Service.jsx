@@ -77,16 +77,6 @@ export default function Service() {
               className="p-6 rounded-xl shadow-lg mb-6"
               style={{ backgroundColor: "#FFFFFF" }}
             >
-              <h3
-                className="text-xl font-bold mb-2"
-                style={{ color: "#C2185B" }}
-              >
-                சேவை கட்டணம்:
-              </h3>
-
-              <p className="text-lg leading-relaxed">
-                ஒரு ஜாதகம் / Bio-data தேர்வு செய்ய ₹50 மட்டுமே.
-              </p>
 
               <p className="text-lg font-semibold mt-3">
                 மேலும் விவரங்களுக்கு:{" "}
@@ -154,16 +144,6 @@ export default function Service() {
               className="p-6 rounded-xl shadow-lg mb-6"
               style={{ backgroundColor: "#FFFFFF" }}
             >
-              <h3
-                className="text-xl font-bold mb-2"
-                style={{ color: "#C2185B" }}
-              >
-                Service Charges:
-              </h3>
-
-              <p className="text-lg leading-relaxed">
-                ₹50/- per Horoscope / Biodata you choose.
-              </p>
 
               <p className="text-lg font-semibold mt-3">
                 For more details:{" "}

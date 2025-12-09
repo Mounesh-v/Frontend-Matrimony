@@ -17,28 +17,29 @@ export default function Login() {
     setLoading(true);
 
     try {
-      const res = await axios.post(
-        `${API}/api/user/login`,
-        form
-      );
+      const res = await axios.post(`${API}/api/user/login`, form);
 
-      // Save JWT token (custom hook)
+      // CHECK APPROVAL STATUS
+      if (res.data.user.status !== "approved") {
+        toast.error("Your account is pending admin approval.");
+        setLoading(false);
+        return;
+      }
+
+      // Save JWT token
       saveToken(res.data.token);
 
-      // Save user info
       localStorage.setItem("userData", JSON.stringify(res.data.user));
       localStorage.setItem("userId", res.data.user._id);
 
-      // Toastify success
       toast.success("Login successful!");
 
-      // Role-based redirect
-      if (res.data.user.role === "groom") {
+      // Role redirect
+      if (res.data.user.role === "groom")
         return (window.location.href = "/groom-register");
-      }
-      if (res.data.user.role === "bride") {
+
+      if (res.data.user.role === "bride")
         return (window.location.href = "/bride-register");
-      }
 
       window.location.href = "/home";
     } catch (error) {
