@@ -81,13 +81,6 @@ export default function Service() {
                 மேலும் விவரங்களுக்கு:{" "}
                 <span style={{ color: "#C2185B" }}>9655326468</span>
               </p>
-
-              <p
-                className="text-lg font-bold mt-2"
-                style={{ color: "#D81B60" }}
-              >
-                * எந்த வகை கமிஷனும் கிடையாது
-              </p>
             </div>
 
             {/* CALL BUTTON */}
@@ -147,13 +140,6 @@ export default function Service() {
               <p className="text-lg font-semibold mt-3">
                 For more details:{" "}
                 <span style={{ color: "#C2185B" }}>9655326468</span>
-              </p>
-
-              <p
-                className="text-lg font-bold mt-2"
-                style={{ color: "#D81B60" }}
-              >
-                * No commission charged
               </p>
             </div>
 
