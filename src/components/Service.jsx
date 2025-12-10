@@ -77,7 +77,6 @@ export default function Service() {
               className="p-6 rounded-xl shadow-lg mb-6"
               style={{ backgroundColor: "#FFFFFF" }}
             >
-
               <p className="text-lg font-semibold mt-3">
                 மேலும் விவரங்களுக்கு:{" "}
                 <span style={{ color: "#C2185B" }}>9655326468</span>
@@ -92,11 +91,12 @@ export default function Service() {
             </div>
 
             {/* CALL BUTTON */}
-            <div className="text-center mt-8">
+            <div className="text-center mt-8 mx-[-20px]">
               <a
                 href="tel:9655326468"
-                className="px-10 py-3 rounded-lg sm:text-[20px] font-bold shadow-md transition-all hover:opacity-95 active:scale-95"
-                style={{ backgroundColor: "#D4A437", color: "#212121" }}
+                className="px-10 py-3 rounded-lg sm:text-[20px] text-[14px] font-bold shadow-md 
+               transition-all hover:opacity-95 active:scale-95 bg-[#D4A437] text-[#212121]
+               whitespace-nowrap inline-block"
               >
                 அழைக்க கிளிக் செய்யவும்
               </a>
@@ -144,7 +144,6 @@ export default function Service() {
               className="p-6 rounded-xl shadow-lg mb-6"
               style={{ backgroundColor: "#FFFFFF" }}
             >
-
               <p className="text-lg font-semibold mt-3">
                 For more details:{" "}
                 <span style={{ color: "#C2185B" }}>9655326468</span>
